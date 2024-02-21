@@ -10,3 +10,78 @@ spec:
       type: aws
       awsActions:
         - "s3:PutObject"
+    - type: internet
+      internet:
+        ips:
+            - 3.5.76.10
+            - 3.5.76.167
+            - 3.5.78.128
+            - 3.5.82.128
+            - 3.5.82.196
+            - 3.5.83.17
+            - 3.5.83.219
+            - 3.5.84.22
+            - 3.5.85.176
+            - 52.218.170.98
+            - 52.218.176.153
+            - 52.218.181.49
+            - 52.218.182.145
+            - 52.92.129.242
+            - 52.92.138.178
+            - 52.92.180.210
+            - 52.92.193.114
+            - 52.92.195.10
+            - 52.92.202.178
+            - 52.92.203.106
+            - 52.92.229.82
+            - 52.92.238.242
+            - 52.92.241.58
+            - 52.92.243.10
+    - type: internet
+      internet:
+        ips:
+            - 52.94.185.153
+    - name: arn:aws:iam::353146681200:role/otr-otterize-tutorial-iam.server@ori-test-cluster-b6383f
+      type: aws
+      awsActions:
+        - sts:AssumeRoleWithWebIdentity
+    - name: arn:aws:s3:::otterize-tutorial-bucket-1708541947
+      type: aws
+      awsActions:
+        - s3:ListBucket
+    - name: arn:aws:s3:::otterize-tutorial-bucket-1708541947/testfile.0.txt
+      type: aws
+      awsActions:
+        - s3:PutObject
+        - s3:PutObject
+        - s3:GetObject
+        - s3:GetObjectTagging
+        - s3:PutObjectTagging
+        - s3:PutObjectAcl
+    - name: arn:aws:s3:::otterize-tutorial-bucket-1708541947/testfile.1.txt
+      type: aws
+      awsActions:
+        - s3:PutObject
+        - s3:PutObject
+        - s3:GetObject
+        - s3:GetObjectTagging
+        - s3:PutObjectTagging
+        - s3:PutObjectAcl
+    - name: arn:aws:s3:::otterize-tutorial-bucket-1708541947/testfile.2.txt
+      type: aws
+      awsActions:
+        - s3:GetObject
+        - s3:GetObjectTagging
+        - s3:PutObject
+        - s3:PutObjectTagging
+        - s3:PutObjectAcl
+    - name: arn:aws:s3:::otterize-tutorial-bucket-1708541947/testfile.3.txt
+      type: aws
+      awsActions:
+        - s3:PutObject
+        - s3:PutObject
+        - s3:GetObject
+        - s3:GetObjectTagging
+        - s3:PutObjectTagging
+        - s3:PutObjectAcl
+    - name: otterize-iamlive.otterize-system
