@@ -8,3 +8,9 @@ spec:
     name: other-client
   calls:
     - name: blah
+    - name: nginx
+      type: http
+      HTTPResources:
+        - path: /other-client-path
+          methods:
+            - GET
