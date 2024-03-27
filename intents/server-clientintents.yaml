@@ -43,3 +43,16 @@ spec:
       type: aws
       awsActions:
         - s3:PutObject
+    - name: arn:aws:s3:::otterize-tutorial-bucket-testing
+      type: aws
+      awsActions:
+        - s3:ListBucket
+    - name: arn:aws:s3:::otterize-tutorial-bucket-testing/*
+      type: aws
+      awsActions:
+        - s3:PutObject
+        - s3:GetObject
+        - s3:GetObjectTagging
+        - s3:PutObject
+        - s3:PutObjectTagging
+        - s3:PutObjectAcl
