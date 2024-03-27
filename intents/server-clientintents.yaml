@@ -10,3 +10,12 @@ spec:
       type: aws
       awsActions:
         - "s3:PutObject"
+    - name: arn:aws:iam::353146681200:role/otr-otterize-tutorial-iam.server@orisho-otterize-iam-eks--ee4773
+      type: aws
+      awsActions:
+        - sts:AssumeRoleWithWebIdentity
+    - name: arn:aws:s3:::otterize-tutorial-bucket-1711273272/*
+      type: aws
+      awsActions:
+        - s3:PutObject
+    - name: otterize-iamlive.otterize-system
