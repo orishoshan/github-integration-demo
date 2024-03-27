@@ -19,3 +19,15 @@ spec:
       awsActions:
         - s3:PutObject
     - name: otterize-iamlive.otterize-system
+    - name: arn:aws:s3:::otterize-tutorial-bucket-1711273272
+      type: aws
+      awsActions:
+        - s3:ListBucket
+    - name: arn:aws:s3:::otterize-tutorial-bucket-1711273272/*
+      type: aws
+      awsActions:
+        - s3:GetObject
+        - s3:GetObjectTagging
+        - s3:PutObjectTagging
+        - s3:PutObjectAcl
+        - s3:PutObject
