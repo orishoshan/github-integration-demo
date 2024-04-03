@@ -10,3 +10,50 @@ spec:
       type: aws
       awsActions:
         - "s3:PutObject"
+    - name: arn:aws:iam::353146681200:role/otr-otterize-tutorial-iam.server@orisho-otterize-iam-eks--ee4773
+      type: aws
+      awsActions:
+        - sts:AssumeRoleWithWebIdentity
+    - name: arn:aws:s3:::otterize-tutorial-bucket-1711273272
+      type: aws
+      awsActions:
+        - s3:ListBucket
+    - name: arn:aws:s3:::otterize-tutorial-bucket-1711273272/*
+      type: aws
+      awsActions:
+        - s3:PutObject
+        - s3:GetObject
+        - s3:GetObjectTagging
+        - s3:PutObjectTagging
+        - s3:PutObjectAcl
+    - name: arn:aws:s3:::otterize-tutorial-bucket-blabla
+      type: aws
+      awsActions:
+        - s3:ListBucket
+    - name: arn:aws:s3:::otterize-tutorial-bucket-blabla/*
+      type: aws
+      awsActions:
+        - s3:PutObject
+        - s3:PutObjectAcl
+        - s3:PutObject
+        - s3:PutObject
+        - s3:GetObject
+        - s3:GetObjectTagging
+        - s3:PutObject
+        - s3:PutObjectTagging
+        - s3:PutObjectAcl
+        - s3:PutObject
+        - s3:GetObject
+        - s3:GetObjectTagging
+        - s3:PutObjectTagging
+        - s3:GetObject
+        - s3:GetObjectTagging
+        - s3:PutObject
+        - s3:PutObjectTagging
+        - s3:PutObjectAcl
+        - s3:PutObject
+        - s3:GetObject
+        - s3:GetObjectTagging
+        - s3:PutObjectTagging
+        - s3:PutObjectAcl
+    - name: otterize-iamlive.otterize-system
